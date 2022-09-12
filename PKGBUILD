@@ -230,7 +230,7 @@ prepare() {
 
 build() {
   # PYTORCH_ROCM_ARCH is an env var used to populate the PYTORCH_ROCM_ARCH export
-  # PYTORCH_ROCM_ARCH="gfx908"
+  PYTORCH_ROCM_ARCH="gfx803"
   # NOTE: It's your responbility to validate the value of $PYTORCH_ROCM_ARCH.
   # If unsure, don't set it and several architectures will be built.
   if [[ -n "$PYTORCH_ROCM_ARCH" ]]; then
